@@ -13,10 +13,13 @@ account = str(input("Please enter a 10 digit account number: "))
 if len(account) != 10:
     print("Error, only 10 digits allowed.")
 else:
-    account[:6]
+    first_six = account[:6]
+    last_four = account[-4:]
     #re_merge = str(account).strip() # replaces first digits with 1 X, need 6 X 
     #replace = account.replace("7", "X")
-    print(account)
+    print(first_six)
+    print(last_four)
+    print(first_six+last_four)
 
 
 
