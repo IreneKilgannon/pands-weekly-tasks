@@ -14,10 +14,10 @@ amount2 = int(input('Enter amount2 (in cent): '))
 money = (amount1 + amount2)/100
 
 print(f'The sum of these is €{money:.2f}')
-print('\u20ac')
+
 #Need to have 2 decimal places in the print out. This is done by the .2f, rounds to two decimal places. 
 #Insert euro symbol, return a money amount. in eurp symbol on laptop! Copy and pasted the euro symbol. Other methods
 # \u20ac codes for a euro symbol
-
+print('\u20ac')
 
 # https://stackoverflow.com/questions/39935857/how-can-i-print-a-euro-%E2%82%AC-symbol-in-python
