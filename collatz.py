@@ -6,7 +6,7 @@
 
 numbers = []
 
-number = int(input("Please enter a positive integer: "))
+number = int(input("Please enter a positive integer: "))    # should I have a statement if given a negative number?
 
 numbers.append(number)
 
@@ -16,10 +16,7 @@ for number in numbers:
     elif number > 1 and number % 2 == 1:
         numbers.append(number*3 + 1)
     else:
-        numbers.append(number)
         break
-print(numbers)
+for value in numbers:                     #use value in the list to print the values in list
+    print(f'{value} ', end = '')                # Problem no spaces between the numbers if I use print(value)                         
 
-
-# Need to not have a list format
-# only one 1 at the end
