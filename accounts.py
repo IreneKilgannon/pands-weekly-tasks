@@ -22,10 +22,14 @@ X_file = (len(first_sixnew)) * "X"
 print(X_file + last_four) 
 
 #Extra: modify program to deal with a/c of any length. What assumptions do I need to make? Assume at least 4 characters? 
+
 extra_account = str(input("Please enter an account number: "))
+
 first_sixnew2 = extra_account[:-4]
 print(first_sixnew2)
 last_four2 = extra_account[-4:]
 print(last_four2)
+
+# Use the 
 X_file2 = (len(first_sixnew2)) * "X"
 print(X_file2 + last_four2) 

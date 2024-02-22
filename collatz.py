@@ -17,6 +17,6 @@ for number in numbers:
         numbers.append(number*3 + 1)
     else:
         break
-for value in numbers:                     #use value in the list to print the values in list
+for value in numbers:                     # use value in the list to print the values in list
     print(f'{value} ', end = '')                # Problem no spaces between the numbers if I use print(value)                         
 
