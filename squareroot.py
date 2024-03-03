@@ -21,9 +21,6 @@ square_roots.append(first_guess)
 newton_first_iteration = 0.5 * (first_guess + x/first_guess)
 square_roots.append(newton_first_iteration)
 
-second_iteration = 0.5 * (newton_first_iteration + x/newton_first_iteration)
-square_roots.append(second_iteration)
-
 difference = abs(square_roots[-2] - square_roots[-1])
 
 
@@ -52,18 +49,6 @@ print(square_roots)
 #difference = newton_first_iteration - subsequent_iterations
 #print(difference)
 
-#while difference <= 0.001:
- #   subsequent_iterations = 0.5 * (newton_first_iteration + x/newton_first_iteration)
- #   subsequent_iterations = newton_first_iteration
-  #  subsequent_iterations = 0.5 * (newton_first_iteration + x/newton_first_iteration)
-  #  subsequent_iterations = newton_first_iteration
-    #subsequent_iterations = 0.5 * (newton_first_iteration + x/newton_first_iteration)
-
-#print(subsequent_iterations)
-#Subsequent_iterations1 = 0.5 * (Subsequent_iterations + x/Subsequent_iterations)
-#print(Subsequent_iterations1)
-
-
 
 #print(first_guess)
 #while 
@@ -75,4 +60,19 @@ print(square_roots)
 
 
 #print(f"The square root of {square_root} is approx {}")
+
+
+# Back to the drawing board. 
+
+x = float(input("Please enter a positive number: "))
+
+Difference = 0.0001
+
+def square_root(n, n/2, ):
+    result = 0.5 * (n + x/n)
+    while abs(root - (square_root + 1)) != Difference:
+        square_root = 0.5 * (n + x/n)
+
+        return square_root'''
+    
 
