@@ -3,33 +3,44 @@
 # Outputs the account number with only the last 4 digits showing and the first 6 replaced with X's
 # Author: Irene Kilgannon
 
-#Thoughts a/c no's are strings, how do I limit to 10 digits? Check length. Can I separate a string into parts? YES
-#Other idea spilt the account number, turn 1-6 into X, then merge the 2 bits back together??
 
-account = str(input("Please enter a 10 digit account number: "))
+# Input 
+account = str(input("Please enter a 10 digit account number: ")) 
 
+# Check length of the account number
 if len(account) != 10:
     print("Error, only 10 digits allowed.")
+
+# The following will run if the length of the account number is equal to 10
 else:
-    first_six = account[0:6]
+    # Slice the string to get the last four digits and give the last four digits a new variable name (last_four)
     last_four = account[-4:]
-    print(last_four)
-    new_account = 'XXXXXX' + last_four # https://realpython.com/python-strings/ section on modifying strings accessed 06/02/2024
+
+    # Concatenate 'XXXXXX' with the last_four variable
+    new_account = 'XXXXXX' + last_four
+
+    # Print the new_account number
     print(new_account)
 
-first_sixnew = account[0:6]
-X_file = (len(first_sixnew)) * "X"
-print(X_file + last_four) 
 
-#Extra: modify program to deal with a/c of any length. What assumptions do I need to make? Assume at least 4 characters? 
+# Modify program to deal with a/c of any length. Assume the a/c number is at least 5 digits in length.
 
-extra_account = str(input("Please enter an account number: "))
+# Input
+any_account = str(input("Please enter an account number: "))
 
-first_sixnew2 = extra_account[:-4]
-print(first_sixnew2)
-last_four2 = extra_account[-4:]
-print(last_four2)
+if len(any_account) < 5:
+    print("At least 5 digits are required.")
 
-# Use the 
-X_file2 = (len(first_sixnew2)) * "X"
-print(X_file2 + last_four2) 
+else:
+    # Slice the string into two parts. The first part of the string up to and not inclulding the last 4 digits.
+    first_part_any_account = any_account[:-4]
+
+    # Last four digits of the any_account string. 
+    last_four2 = any_account[-4:]
+
+    # Get the length of the first part of the account number. Multiply the length by "X".
+    # This will return the correct number of X's for the length of first part of the account.
+    x_account = (len(first_part_any_account)) * "X"
+
+# Print the result of the concatenatation x_account with the last four digits
+    print(x_account + last_four2)
