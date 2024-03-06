@@ -6,7 +6,8 @@
 
 
 # Input
-x = float(input("Please enter a positive number: "))
+144
+
 
 # Need to guess a starting approximation for the square root.
 
@@ -15,11 +16,17 @@ x = float(input("Please enter a positive number: "))
 # The equation for calculating the square root using Newton's equation is 0.5 * (approximation + x/approximation)
 
 
-def square_root():
-    approximation = 0.5 * (x + x/x)
-    better_approximation = 0.5 * (approximation + x/approximation)
-    while abs(better_approximation - approximation) > 0.0001:
-        even_better = 0.5 * (better_approximation + x/better_approximation)
-        return even_better
+x = float(input("Please enter a positive number: "))
 
-print(f"The square root of {x} is {square_root()}")
+def square_root():
+    estimates = []
+    approximation = x/2
+    estimates.append(approximation)
+    for estimate in estimates:
+        estimate = 0.5 * (estimates[-1] + x/(estimates[-1]))
+        estimates.append(estimate)
+        if abs(estimates[-2] -estimates[-1]) < 0.0000001:
+            break
+    return estimates
+
+print(square_root())
