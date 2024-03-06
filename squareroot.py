@@ -5,20 +5,21 @@
 # Author: Irene Kilgannon
 
 
+# Input
+x = float(input("Please enter a positive number: "))
+
+# Need to guess a starting approximation for the square root.
 
 # $$x_{n+1} = \frac{1}{2}(x_{n}+ \frac{a}{x_{n}})$$
-# Need to guess an answer for the square root e.g. if trying to calculate the square root of 2, we could guess that the answer might be 1.
+
+# The equation for calculating the square root using Newton's equation is 0.5 * (approximation + x/approximation)
 
 
-# Back to the drawing board. 
+def square_root():
+    approximation = 0.5 * (x + x/x)
+    better_approximation = 0.5 * (approximation + x/approximation)
+    while abs(better_approximation - approximation) > 0.0001:
+        even_better = 0.5 * (better_approximation + x/better_approximation)
+        return even_better
 
-x = float(input("Please enter a positive number: "))
-guess = x/2
-estimate = 
-
-def square_root(number):
-
-square_root = estimate
-
-print(f"The square root of {x} is approx {square_root}")
-
+print(f"The square root of {x} is {square_root()}")
