@@ -5,18 +5,14 @@
 # Author: Irene Kilgannon
 
 
-# Input
-144
-
-
-# Need to guess a starting approximation for the square root.
 
 # $$x_{n+1} = \frac{1}{2}(x_{n}+ \frac{a}{x_{n}})$$
 
-# The equation for calculating the square root using Newton's equation is 0.5 * (approximation + x/approximation)
+# The equation for calculating the square root using Newton's equation is 0.5 * (approximation + x/approximation).
 
-
+# Input
 x = float(input("Please enter a positive number: "))
+
 
 def square_root():
     estimates = []
@@ -27,6 +23,7 @@ def square_root():
         estimates.append(estimate)
         if abs(estimates[-2] -estimates[-1]) < 0.0000001:
             break
-    return estimates
+    return estimates[-1]
 
-print(square_root())
+
+print(f"The square root of {x} is {square_root()}")
