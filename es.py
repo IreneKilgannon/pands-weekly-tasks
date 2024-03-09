@@ -24,19 +24,25 @@ with open("moby-dick.txt", 'r') as f:
    data = f.read()
    print(counting(data))'''
 
-
+import os
 import sys
 
 if len(sys.argv) != 2:
     print('Error: missing argument')
     sys.exit(1)
 
+file_name = sys.argv[1]
 
+for fp in file_name:
+    # Split the extension from the path and normalise it to lowercase.
+    ext = os.path.splitext(file_name)
 
+    file_extension = ext[1]
 
+    # Now we can simply use == to check for equality, no need for wildcards.
+    if file_extension != '.txt':
+        print("File format must be .txt") 
 # Not a txt file, check file type. How?
-# https://www.youtube.com/watch?v=LpZmZs2_BC4&list=PLZPZq0r_RZOOkUQbat8LyQii36cJf2SWT&index=39
-
 
 file_name = sys.argv[1]
 try:
@@ -45,6 +51,7 @@ try:
         print(e_cont)
 
 # File name does not exist
+# # https://www.youtube.com/watch?v=LpZmZs2_BC4&list=PLZPZq0r_RZOOkUQbat8LyQii36cJf2SWT&index=39
 except FileNotFoundError:
     print("That file was not found")
 
