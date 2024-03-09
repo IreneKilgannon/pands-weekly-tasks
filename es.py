@@ -32,18 +32,28 @@ if len(sys.argv) != 2:
     sys.exit(1)
 
 
-# File name does not exist, check file type. HOw?
 
-# Not a txt file
-    
 
-# Output when running: python3 your_script.py
-# Error: missing argument
+# Not a txt file, check file type. How?
+# https://www.youtube.com/watch?v=LpZmZs2_BC4&list=PLZPZq0r_RZOOkUQbat8LyQii36cJf2SWT&index=39
+
 
 file_name = sys.argv[1]
+try:
+    with open(file_name, 'r') as f:
+        e_cont = f.read().count("e")
+        print(e_cont)
 
-with open(file_name, 'r') as f:
-    e_cont = f.read().count("e's")
-    #E_cont = f.read().count('E')
+# File name does not exist
+except FileNotFoundError:
+    print("That file was not found")
 
-print(e_cont)
+
+
+# Doesn't work
+'''for file in sys.argv[1]:
+    if file.endswith(".txt"):
+        with open(file_name, 'r') as f:
+            e_cont = f.read().count("e")
+    else:
+        print("Error, not a txt file")'''
