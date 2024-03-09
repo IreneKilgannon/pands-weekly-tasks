@@ -32,7 +32,7 @@ if len(sys.argv) != 2:
     sys.exit(1)
 
 file_name = sys.argv[1]
-
+#https://www.geeksforgeeks.org/how-to-get-file-extension-in-python/
 for fp in file_name:
     # Split the extension from the path and normalise it to lowercase.
     ext = os.path.splitext(file_name)
