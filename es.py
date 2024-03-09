@@ -9,7 +9,7 @@
 
 #counting = input("Enter a string: ")
 
-
+'''
 def counting(e):
     count = 0
     for item in data:
@@ -22,26 +22,28 @@ def counting(e):
 
 with open("moby-dick.txt", 'r') as f:
    data = f.read()
-   print(counting(data))
-
+   print(counting(data))'''
 
 
 import sys
 
-#for arg in sys.argv:
- #   print(counting(data))
+if len(sys.argv) != 2:
+    print('Error: missing argument')
+    sys.exit(1)
 
-count = 0
 
-n = len(sys.argv)
+# File name does not exist, check file type. HOw?
 
-for i in range(1, n):
-    if i == 'e':
-        count +=1
-print(count)
+# Not a txt file
     
 
-for arg in sys.argv:
-    with open(arg[1], 'r') as f:
-       data = f.read()
-       print(counting(data))
+# Output when running: python3 your_script.py
+# Error: missing argument
+
+file_name = sys.argv[1]
+
+with open(file_name, 'r') as f:
+    e_cont = f.read().count('e')
+    #E_cont = f.read().count('E')
+
+print(e_cont)
