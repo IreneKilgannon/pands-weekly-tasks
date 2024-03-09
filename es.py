@@ -43,7 +43,7 @@ if len(sys.argv) != 2:
 file_name = sys.argv[1]
 
 with open(file_name, 'r') as f:
-    e_cont = f.read().count('e')
+    e_cont = f.read().count("e's")
     #E_cont = f.read().count('E')
 
 print(e_cont)
