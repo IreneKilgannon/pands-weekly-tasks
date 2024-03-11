@@ -3,72 +3,32 @@
 # The program should take the filename from an argument on the command line
 # Author Irene Kilgannon
 
-
-
-# How would I count the occurrences of a specific character in a string?
-
-#counting = input("Enter a string: ")
-
-'''
-def counting(e):
-    count = 0
-    for item in data:
-      if item == 'e':
-         count +=1
-    return count
-
-#Find moby dick online and save it as a txt file
-# How can i do this in python?
-#https://courses.cs.washington.edu/courses/cse390c/22sp/lectures/moby.txt
-
-with open("moby-dick.txt", 'r') as f:
-   data = f.read()
-   print(counting(data))'''
-
 import os
 import sys
 
-'''# Check the length 
+# Check the number of arguments in sys.argv
 if len(sys.argv) != 2:
-    print('Error: missing argument')
-    sys.exit(1)
-
-file_name = sys.argv[1]
-#https://www.geeksforgeeks.org/how-to-get-file-extension-in-python/
-#for fp in file_name:
-    # Split the extension from the path and normalise it to lowercase.
-root, ext = os.path.splitext(file_name)
-if ext != ".txt":
-    print("File format must be .txt")
-
-file_name = sys.argv[1]
-try:
-    with open(file_name, 'r') as f:
-        e_count = f.read().lower().count("e")
-        print(e_count)
-
-# File name does not exist
-# # https://www.youtube.com/watch?v=LpZmZs2_BC4&list=PLZPZq0r_RZOOkUQbat8LyQii36cJf2SWT&index=39
-except FileNotFoundError:
-    print("That file was not found")
-
-NEED TO TIDY UP CODE'''
-
-if len(sys.argv) != 2:
-        print('Error: missing argument')
+        print(f"Error: One file is required, {len(sys.argv)-1} were given")
         sys.exit(1)
 
+# 
 file_name = sys.argv[1]
 
-root, ext = os.path.splitext(file_name)
+# Check the file extension. Must be .txt
+root, ext = os.path.splitext(file_name)            # os.path.splitext() splits the file name by the last dot on the right into the root and the ext
 if ext != ".txt":
-    print("File format must be .txt")
+    print(f"Error: File format must be .txt. File format given was {ext}.")
     sys.exit(1)
 
+# Open the file to read it.
 try:
     with open(file_name, 'r') as f:
-        e_count = f.read().lower().count("e")
-        print(e_count)
+        e_count = f.read().lower().count("e")     # To count all the e's, change the capital letters to lowercase with .lower(), then use .count() to count the e's. 
+        print(e_count)                            # Print the result.
 
-except FileNotFoundError:
-    print("That file was not found") 
+except FileNotFoundError:                         # Print an exception if the file was not found. 
+    print("That file was not found")  
+
+
+# https://www.geeksforgeeks.org/how-to-get-file-extension-in-python/
+# https://www.youtube.com/watch?v=LpZmZs2_BC4&list=PLZPZq0r_RZOOkUQbat8LyQii36cJf2SWT&index=39
