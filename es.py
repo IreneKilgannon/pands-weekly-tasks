@@ -28,7 +28,7 @@ with open("moby-dick.txt", 'r') as f:
 import os
 import sys
 
-# Check the length 
+'''# Check the length 
 if len(sys.argv) != 2:
     print('Error: missing argument')
     sys.exit(1)
@@ -52,3 +52,23 @@ try:
 except FileNotFoundError:
     print("That file was not found")
 
+NEED TO TIDY UP CODE'''
+
+if len(sys.argv) != 2:
+        print('Error: missing argument')
+        sys.exit(1)
+
+file_name = sys.argv[1]
+
+root, ext = os.path.splitext(file_name)
+if ext != ".txt":
+    print("File format must be .txt")
+    sys.exit(1)
+
+try:
+    with open(file_name, 'r') as f:
+        e_count = f.read().lower().count("e")
+        print(e_count)
+
+except FileNotFoundError:
+    print("That file was not found") 
