@@ -10,3 +10,9 @@ data = np.random.normal(5, 2, 1000)
 
 plt.hist(data)
 plt.show()
+
+x_points = np.array(range(0, 10))
+y_points = x_points*x_points*x_points
+
+plt.plot(x_points, y_points)
+plt.show()
