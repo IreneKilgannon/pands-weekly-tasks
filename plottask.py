@@ -11,6 +11,10 @@ import matplotlib.pyplot as plt
 np.random.seed(123355)
 data = np.random.normal(5, 2, 1000)  # inputs into the normal(mean, standard deviation, values)
 
+# Truncate the x-axis at 10  
+plt.xlim([0, 10])
+#axes.set_ylim([ymin,ymax])
+
 plt.hist(data)
 
 # Plot the function h(x) = x^3 in the range of 0 to 10
