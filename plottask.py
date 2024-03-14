@@ -19,7 +19,7 @@ data = np.random.normal(5, 2, 1000)  # inputs into the normal(mean, standard dev
 plt.xlim(0, 10)
 
 # Generate a histogram.
-plt.hist(data, bins = 15, edgecolor = 'black')
+plt.hist(data, bins = 15, color = 'mediumorchid', edgecolor = 'black')
 
 # Plot the function h(x) = x^3 in the range of 0 to 10
 
@@ -30,7 +30,7 @@ x_points = np.array(range(0, 10))
 y_points = x_points**3
 
 # Line plot of the function
-plt.plot(x_points, y_points, marker = 'v')
+plt.plot(x_points, y_points, color = 'turquoise', marker = 'o')
 
 # Add title and label x and y axis.
 
