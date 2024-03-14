@@ -8,11 +8,13 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+
+
 np.random.seed(123355)
 data = np.random.normal(5, 2, 1000)  # inputs into the normal(mean, standard deviation, values)
 
 # Truncate the x-axis at 10  
-plt.xlim([0, 10])
+plt.xlim(0, 10)
 #axes.set_ylim([ymin,ymax])
 
 plt.hist(data)
@@ -33,7 +35,7 @@ plt.plot(x_points, y_points, marker = 'v')
 plt.title("Plot of normal distribution and h(x) = x**3")
 plt.xlabel("Numbers")
 plt.ylabel("Frequency")
-plt.legend(x_points)
+plt.legend(["function","normal distribution"])
 
 # Save the plot as a png file
 plt.savefig("plottask.png")
@@ -41,3 +43,4 @@ plt.savefig("plottask.png")
 # Display the plot on screen
 plt.show()
 
+#https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.xlim.html
