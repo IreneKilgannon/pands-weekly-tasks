@@ -15,11 +15,10 @@ today = date.today().weekday()
 # Weekday() returns an integer from 0 to 6 for Monday to Sunday for the days of the week.
 
 # Need an if statement to print the required output depending on the result of the today variable
-# Less than 5 is any day before Saturday. The integer 5 corresponds to Saturday
-
+# Less than 5 is any day before Saturday. The integer 5 corresponds to Saturday.
 if today < 5:
     print("Yes, unfortunately today is a weekday.")
-    
+
 # If .weekday() returns 5 or 6, i.e. Saturday or Sunday it will return the following:
 else:
     print("It is the weekend, yah!")
