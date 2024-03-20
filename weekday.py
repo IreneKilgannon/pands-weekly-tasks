@@ -7,8 +7,8 @@
 # Import the date class from the datetime module
 from datetime import date
 
-# To find today's date, use the built in .today() method.
-# Use .weekday() of class date in the datetime module to extract the day of the week. 
+# To find today's date, use the built in today() method.
+# Use weekday() of class date in the datetime module to extract the day of the week. 
 today = date.today().weekday()
 
 
@@ -19,6 +19,9 @@ today = date.today().weekday()
 if today < 5:
     print("Yes, unfortunately today is a weekday.")
 
-# If .weekday() returns 5 or 6, i.e. Saturday or Sunday it will return the following:
+# If weekday() returns 5 or 6, i.e. Saturday or Sunday it will print the following:
 else:
     print("It is the weekend, yah!")
+
+# References 
+    # See weekday.ipynb (https://github.com/IreneKilgannon/pands-weekly-tasks/blob/main/weekday.ipynb)
