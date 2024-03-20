@@ -14,7 +14,7 @@ if len(sys.argv) != 2:
 # Assigning a variable name to the file at sys.argv[1].
 file_name = sys.argv[1]
 
-# Check the file extension. Must be .txt
+# Check the file extension. ext must be .txt
 root, ext = os.path.splitext(file_name)
 if ext != ".txt":
     print(f"Error: File format must be .txt. File format given was {ext}.")
@@ -23,7 +23,7 @@ if ext != ".txt":
 # Open the file to read it.
 try:
     with open(file_name, 'r') as f:
-        # Count all the e's after converting them to lower case with count()
+        # Count all the e's after converting them to lower case with lower()
         e_count = f.read().lower().count("e")
         print(e_count)
 
@@ -32,4 +32,4 @@ except FileNotFoundError:
     print("That file was not found")  
 
 
-# For more detailed referencing and comments check out the jupyter notebook associated with this program. https://github.com/IreneKilgannon/pands-weekly-tasks/blob/main/es.ipynb
+# For more detailed comments and references check out the jupyter notebook associated with this program. https://github.com/IreneKilgannon/pands-weekly-tasks/blob/main/es.ipynb
