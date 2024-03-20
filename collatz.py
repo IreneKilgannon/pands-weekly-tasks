@@ -1,8 +1,8 @@
 # Asks the user to input any positive integer.
 # Outputs the following:
-    # if number is even, divide by 2
-    # if number is odd, multiply x 3 and add 1
-# Have the program end when value is 1
+    # if number is even, divide by 2.
+    # if number is odd, multiply x 3 and add 1.
+# Have the program end when value is 1.
 # This is called the Collatz Conjecture. 
 # Author: Irene Kilgannon
 
@@ -21,7 +21,7 @@ if number < 0:
 # Append the number to the numbers list.
 numbers.append(number)
 
-# A for loop to carry out the required calculations
+# A for loop to carry out the required calculations.
 for number in numbers:
     # Break out of the loop when the number is 1.
     if number == 1:
@@ -52,5 +52,5 @@ Looping through items in a list: https://www.w3schools.com/python/gloss_python_l
 
 Python end parameter in print(): https://www.geeksforgeeks.org/gfact-50-python-end-parameter-in-print/
 
-https://medium.com/@chakshugupta774/exploring-the-collatz-conjecture-with-python-7c5d9f31d233
+Collatz from defining a function and using a while loop: https://medium.com/@chakshugupta774/exploring-the-collatz-conjecture-with-python-7c5d9f31d233
 '''
