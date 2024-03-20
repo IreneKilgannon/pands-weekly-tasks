@@ -8,8 +8,8 @@ import sys
 
 # Check the number of arguments in sys.argv
 if len(sys.argv) != 2:
-        print(f"Error: One file is required, {len(sys.argv)-1} were given")
-        sys.exit(1)
+        # Exit the program and print the error message if the number of files is not equal to 2.
+        sys.exit(f"Error: Only one file is required, {len(sys.argv)-1} were given.")
 
 # Assigning a variable name to the file at sys.argv[1].
 file_name = sys.argv[1]
@@ -17,8 +17,8 @@ file_name = sys.argv[1]
 # Check the file extension. ext must be .txt
 root, ext = os.path.splitext(file_name)
 if ext != ".txt":
-    print(f"Error: File format must be .txt. File format given was {ext}.")
-    sys.exit(1)
+    # Exit the program and print the error message if the file format is not txt.
+    sys.exit(f"Error: File format must be .txt. File format given was {ext}.")
 
 # Open the file to read it.
 try:
