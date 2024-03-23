@@ -15,6 +15,8 @@ file_name = sys.argv[1]
 
 # Split the file by the last '.' on the right.
 root, ext = os.path.splitext(file_name)
+
+# Check the file ending is .txt. If not return an error message.
 if ext != '.txt':
     sys.exit(f"Error: File format must be .txt. File format given was {ext}.")
 
