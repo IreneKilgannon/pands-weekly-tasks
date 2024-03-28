@@ -9,17 +9,17 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-# Set a seed, not required as part of task but it will make it easier to see any changes made to the program. Remove before submitting.
+# Set a seed, not required as part of task but it will make it easier to compare changes to the program.
 np.random.seed(123355)
 
-# inputs into the normal(mean, standard deviation, values)
+# Inputs into the normal(mean, standard deviation, values)
 data = np.random.normal(5, 2, 1000)  
 
 # Truncate the x-axis at 10  
 plt.xlim(0, 10)
 
 # Generate a histogram.
-plt.hist(data, bins = 15, color = 'mediumorchid', edgecolor = 'black')
+plt.hist(data, color = 'mediumorchid', edgecolor = 'black')
 
 # Plot the function h(x) = x^3 in the range of 0 to 10
 # Generate x points
@@ -32,11 +32,10 @@ y_points = x_points**3
 plt.plot(x_points, y_points, color = 'turquoise', marker = 'o')
 
 # Add title and label x and y axis.
-
-plt.title("Plot of normal distribution and h(x) = x**3")
-plt.xlabel("Numbers")
+plt.title("Histogram of normal distribution and lineplot of h(x) = x^3")
+plt.xlabel("Value")
 plt.ylabel("Frequency")
-plt.legend(["function","normal distribution"])
+plt.legend(["h(x) = x**3","normal distribution"])
 
 # Save the plot as a png file
 plt.savefig("plottask.png")
@@ -45,6 +44,4 @@ plt.savefig("plottask.png")
 plt.show()
 
 
-# References
-
-#https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.xlim.html
+# Link to the Jupyter notebook for references and additional comments https://github.com/IreneKilgannon/pands-weekly-tasks/blob/main/plottask.ipynb
