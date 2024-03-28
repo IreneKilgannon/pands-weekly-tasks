@@ -12,8 +12,8 @@ import matplotlib.pyplot as plt
 # Set a seed, not required as part of task but it will make it easier to see any changes made to the program. Remove before submitting.
 np.random.seed(123355)
 
-
-data = np.random.normal(5, 2, 1000)  # inputs into the normal(mean, standard deviation, values)
+# inputs into the normal(mean, standard deviation, values)
+data = np.random.normal(5, 2, 1000)  
 
 # Truncate the x-axis at 10  
 plt.xlim(0, 10)
@@ -22,9 +22,8 @@ plt.xlim(0, 10)
 plt.hist(data, bins = 15, color = 'mediumorchid', edgecolor = 'black')
 
 # Plot the function h(x) = x^3 in the range of 0 to 10
-
 # Generate x points
-x_points = np.array(range(0, 10))
+x_points = np.array(range(0, 11))
 
 # Generate the y-points. y = x cubed.
 y_points = x_points**3
