@@ -23,5 +23,5 @@ if today < 5:
 else:
     print("It is the weekend, yah!")
 
-# References 
-    # See weekday.ipynb (https://github.com/IreneKilgannon/pands-weekly-tasks/blob/main/weekday.ipynb)
+
+# See weekday.ipynb (https://github.com/IreneKilgannon/pands-weekly-tasks/blob/main/weekday.ipynb)
