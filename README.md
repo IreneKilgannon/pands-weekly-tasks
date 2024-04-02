@@ -6,7 +6,7 @@ This respository contains the weekly tasks assignments for the module, Programmi
 
 The overall aim of programming and scripting module is to teach the basics of Python programming.
 
-Eight tasks were assigned and each task was written in python. Some of the trickier assignments that needed more explanatory comments have a corresponding Jupyter notebook as shown in the table below.
+Eight tasks were assigned and each task was written in python using VScode. Some of the trickier assignments, that required additional comments have an associated Jupyter notebook ,as shown in the table below.
 
 
 | Week |File.py |Jupyter notebook (if any)|
