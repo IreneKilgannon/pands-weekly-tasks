@@ -18,41 +18,60 @@ Eight tasks were assigned. Some of the trickier assignments that needed more exp
 |7| [es.py](https://github.com/IreneKilgannon/pands-weekly-tasks/blob/main/es.py)| [es.ipynb](https://github.com/IreneKilgannon/pands-weekly-tasks/blob/main/es.py)|
 |8|[plottask.py](https://github.com/IreneKilgannon/pands-weekly-tasks/blob/main/plottask.py)|[plottask.ipynb](https://github.com/IreneKilgannon/pands-weekly-tasks/blob/main/plottask.ipynb)|
 
-## Get started
+## Prerequisites
 
-download anaconda, vs code
+Download and install [Anaconda](https://www.anaconda.com/download).
+
+Download and install [Visual Studio Code](https://code.visualstudio.com/).
 
 
+## Description of each task and referencess.
 
 __Week 2 bank.py__
 
+Prompt the user and read in two money amounts in cents, sum the amounts and print the answer in euro and cents €0.00.
 
-Floating point errors: https://docs.python.org/3/tutorial/floatingpoint.html
-FLoor division: (https://www.geeksforgeeks.org/floor-division-in-python/)
-Modulo: https://realpython.com/python-modulo-operator/#modulo-operator-with-float
+[Floating point errors](https://docs.python.org/3/tutorial/floatingpoint.html)
+
+[Floor division](https://www.geeksforgeeks.org/floor-division-in-python/)
+
+[Modulo]https://realpython.com/python-modulo-operator/#modulo-operator-with-float
 
 
-__Week 3vaccounts.py__
-[Python strings](https://realpython.com/python-strings/). The sections on string indexing, string slicing and modifying strings were particularily useful.
+__Week 3 accounts.py__
+
+Read in a 10 character bank account number and outputs the account number displaying the last 4 digits showing and the first 6 digits replaced with X's.
+
+Extra: Modify the program to deal wiht an account number of any length.
+
+[Python strings](https://realpython.com/python-strings/) The sections on string indexing, string slicing and modifying strings were particularily useful.
 
 [Python string concatenation](https://www.w3schools.com/python/gloss_python_string_concatenation.asp)
 
 __Week 4  collatz.py__
 
-Short video on the Collatz conjecture: https://www.youtube.com/watch?v=6MfifYEA-r0
+Based on the Collatz Conjecture. Asks the user to input any positive integer and outputs the following: if number is even, divide by 2, if number is odd, multiply x 3 and add 1. Have the program end when value is 1.
 
-Control Flow, A Whirlwind Tour of Python, Jake VanderPlas, pages 37-41 or https://github.com/jakevdp/WhirlwindTourOfPython/blob/master/07-Control-Flow-Statements.ipynb
+Short video about the [Collatz conjecture](https://www.youtube.com/watch?v=6MfifYEA-r0)
 
-Looping through items in a list: https://www.w3schools.com/python/gloss_python_loop_list_items.asp
+Control Flow, A Whirlwind Tour of Python, Jake VanderPlas, pages 37-41
 
-Python end parameter in print(): https://www.geeksforgeeks.org/gfact-50-python-end-parameter-in-print/
+[Looping through items in a list](https://www.w3schools.com/python/gloss_python_loop_list_items.asp)
 
-Collatz from defining a function and using a while loop: https://medium.com/@chakshugupta774/exploring-the-collatz-conjecture-with-python-7c5d9f31d233
+[Python end parameter in print()](https://www.geeksforgeeks.org/gfact-50-python-end-parameter-in-print/)
+
+[Collatz from defining a function and using a while loop](https://medium.com/@chakshugupta774/exploring-the-collatz-conjecture-with-python-7c5d9f31d233)
 
 __Week 5 weekday.py__
-https://docs.python.org/3/library/datetime.html
+
+Write a program that outputs whether or not today is a weekday. If it is a weekday output is "Yes, unfortunately today is a weekday". If it is the weekend output is "It is the weekend, yah!"
+
+[datetime module](https://docs.python.org/3/library/datetime.html)
+
 https://www.geeksforgeeks.org/python-datetime-module/
-https://www.geeksforgeeks.org/isocalendar-function-of-datetime-date-class-in-python/
+
+[isocalendar](https://www.geeksforgeeks.org/isocalendar-function-of-datetime-date-class-in-python/)
+
 [Python DateTime](https://realpython.com/python-datetime/)
 
 [DateTime Variables in Python and Pandas](https://www.analyticsvidhya.com/blog/2020/05/datetime-variables-python-pandas/)
@@ -63,6 +82,9 @@ https://www.geeksforgeeks.org/isocalendar-function-of-datetime-date-class-in-pyt
 
 
 __Week 6 squareroot.py__
+
+Calculate the square roots using the Newton Method.
+
 [Newton-Raphson Method](https://pythonnumericalmethods.berkeley.edu/notebooks/chapter19.04-Newton-Raphson-Method.html#:~:text=The%20Newton%2DRaphson%20Method%20of,)
 
 Explanation of the python square root function from [realpython.com](https://realpython.com/python-square-root-function/)
@@ -78,9 +100,12 @@ A much neater, concise method of using Newton's equation to calculate square roo
 
 __Week 7 es.py__
 
+Write a program that reads in a text file and outputs the number of e's it contains. The program should take the filename from an argument on the command line.
+
 [moby-dick.txt](https://courses.cs.washington.edu/courses/cse390c/22sp/lectures/moby.txt)
 
 [how to download files with URLs from python](https://realpython.com/python-download-file-from-url)
+
 https://www.w3schools.com/python/ref_string_count.asp
 
 [command line](https://cs.stanford.edu/people/nick/py/python-command.html#:~:text=The%20command%20line%20is%20a,called%20%22command%20line%20arguments%22)
@@ -100,14 +125,19 @@ ommand line arguments with emphasis on argparse. [Ultimate guide to Command Line
 
 __Week 8 plottask.py__
 
+Write a program that displays (on the one set of axes):
+* a histogram of a normal distribution of 1000 values with a mean of 5 and a standard deviation of 2
+* and a plot of the function h(x) = x^3 in the range of 0 to 10
+
 [Normal Distribution](https://www.geeksforgeeks.org/how-to-plot-normal-distribution-over-histogram-in-python/)
 
 [Python Histograms](https://realpython.com/python-histograms/)
+
 [Introduction to Data Visualization with Matplotlib](https://app.datacamp.com/learn/courses/introduction-to-data-visualization-with-matplotlib)
 
 [Setting a limit on the x-axis](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.xlim.html)
 
- [Colours available in matplotlib](https://matplotlib.org/stable/gallery/color/named_colors.html)
+[Colours in matplotlib](https://matplotlib.org/stable/gallery/color/named_colors.html)
 
 ## Get help
 
