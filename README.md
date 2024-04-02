@@ -1,10 +1,12 @@
-# pands-weekly-tasks
+# Pands Weekly Tasks
+
+Author: Irene Kilgannon
 
 This respository contains the weekly tasks assignments for the module, Programming and Scripting for the H. Dip in Science in Data Analytics, Atlantic Technological University.
 
 The overall aim of programming and scripting module is to teach the basics of Python programming.
 
-Eight tasks were assigned. Some of the trickier assignments that needed more explanatory comments have a corresponding Jupyter notebook as shown in the table below.
+Eight tasks were assigned and each task was written in python. Some of the trickier assignments that needed more explanatory comments have a corresponding Jupyter notebook as shown in the table below.
 
 
 | Week |File.py |Jupyter notebook (if any)|
@@ -18,6 +20,7 @@ Eight tasks were assigned. Some of the trickier assignments that needed more exp
 |7| [es.py](https://github.com/IreneKilgannon/pands-weekly-tasks/blob/main/es.py)| [es.ipynb](https://github.com/IreneKilgannon/pands-weekly-tasks/blob/main/es.py)|
 |8|[plottask.py](https://github.com/IreneKilgannon/pands-weekly-tasks/blob/main/plottask.py)|[plottask.ipynb](https://github.com/IreneKilgannon/pands-weekly-tasks/blob/main/plottask.ipynb)|
 
+
 ## Prerequisites
 
 Download and install [Anaconda](https://www.anaconda.com/download).
@@ -25,7 +28,15 @@ Download and install [Anaconda](https://www.anaconda.com/download).
 Download and install [Visual Studio Code](https://code.visualstudio.com/).
 
 
-## Description of each task and referencess.
+## Description of each task and references.
+
+
+__Week 1 helloworld.py__
+
+Write a program that prints Hello World!
+
+[Python-print-function](https://www.datacamp.com/tutorial/python-print-function)
+
 
 __Week 2 bank.py__
 
@@ -35,18 +46,19 @@ Prompt the user and read in two money amounts in cents, sum the amounts and prin
 
 [Floor division](https://www.geeksforgeeks.org/floor-division-in-python/)
 
-[Modulo]https://realpython.com/python-modulo-operator/#modulo-operator-with-float
+[Modulo](https://realpython.com/python-modulo-operator/#modulo-operator-with-float)
 
 
 __Week 3 accounts.py__
 
 Read in a 10 character bank account number and outputs the account number displaying the last 4 digits showing and the first 6 digits replaced with X's.
 
-Extra: Modify the program to deal wiht an account number of any length.
+Extra: Modify the program to deal with an account number of any length.
 
 [Python strings](https://realpython.com/python-strings/) The sections on string indexing, string slicing and modifying strings were particularily useful.
 
 [Python string concatenation](https://www.w3schools.com/python/gloss_python_string_concatenation.asp)
+
 
 __Week 4  collatz.py__
 
@@ -61,6 +73,7 @@ Control Flow, A Whirlwind Tour of Python, Jake VanderPlas, pages 37-41
 [Python end parameter in print()](https://www.geeksforgeeks.org/gfact-50-python-end-parameter-in-print/)
 
 [Collatz from defining a function and using a while loop](https://medium.com/@chakshugupta774/exploring-the-collatz-conjecture-with-python-7c5d9f31d233)
+
 
 __Week 5 weekday.py__
 
@@ -102,26 +115,26 @@ __Week 7 es.py__
 
 Write a program that reads in a text file and outputs the number of e's it contains. The program should take the filename from an argument on the command line.
 
-[moby-dick.txt](https://courses.cs.washington.edu/courses/cse390c/22sp/lectures/moby.txt)
+Link to the moby dick text file. [moby-dick.txt](https://courses.cs.washington.edu/courses/cse390c/22sp/lectures/moby.txt)
 
-[how to download files with URLs from python](https://realpython.com/python-download-file-from-url)
+How to [download files with URLs from python](https://realpython.com/python-download-file-from-url)
 
-https://www.w3schools.com/python/ref_string_count.asp
+[Python string count() method](https://www.w3schools.com/python/ref_string_count.asp)
 
-[command line](https://cs.stanford.edu/people/nick/py/python-command.html#:~:text=The%20command%20line%20is%20a,called%20%22command%20line%20arguments%22)
-[parse command line arguments](https://www.datacamp.com/tutorial/argument-parsing-in-python)
+[Command line arguments](https://cs.stanford.edu/people/nick/py/python-command.html#:~:text=The%20command%20line%20is%20a,called%20%22command%20line%20arguments%22)
 
-[Sys.argv](https://www.youtube.com/watch?v=ZQ9JO0e9468)
+[Argument parsing in python](https://www.datacamp.com/tutorial/argument-parsing-in-python)
 
-[Try and Except](https://www.youtube.com/watch?v=LpZmZs2_BC4&list=PLZPZq0r_RZOOkUQbat8LyQii36cJf2SWT&index=40)
+YouTube video on [Sys.argv](https://www.youtube.com/watch?v=ZQ9JO0e9468)
 
-[os.path.splitext()](https://www.geeksforgeeks.org/python-os-path-splitext-method/)
+YouTube video on [Try and Except](https://www.youtube.com/watch?v=LpZmZs2_BC4&list=PLZPZq0r_RZOOkUQbat8LyQii36cJf2SWT&index=40)
 
-ommand line arguments with emphasis on argparse. [Ultimate guide to Command Line Arguments in Python scripts](https://moez-62905.medium.com/the-ultimate-guide-to-command-line-arguments-in-python-scripts-61c49c90e0b3) or https://archive.ph/scZzt
+[os.path.splitext() method](https://www.geeksforgeeks.org/python-os-path-splitext-method/)
 
 [Python read a file](https://www.youtube.com/watch?v=LpZmZs2_BC4&list=PLZPZq0r_RZOOkUQbat8LyQii36cJf2SWT&index=39)
 
 [Python try and except](https://www.w3schools.com/python/python_try_except.asp)
+
 
 __Week 8 plottask.py__
 
@@ -133,15 +146,13 @@ Write a program that displays (on the one set of axes):
 
 [Python Histograms](https://realpython.com/python-histograms/)
 
-[Introduction to Data Visualization with Matplotlib](https://app.datacamp.com/learn/courses/introduction-to-data-visualization-with-matplotlib)
+Datacamp course [Introduction to Data Visualization with Matplotlib](https://app.datacamp.com/learn/courses/introduction-to-data-visualization-with-matplotlib)
 
 [Setting a limit on the x-axis](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.xlim.html)
 
 [Colours in matplotlib](https://matplotlib.org/stable/gallery/color/named_colors.html)
 
+
 ## Get help
 
-getting started with the repository
-
-
-##  author? 
+If you have any questions or queries contact me at g00220627@atu.ie or alternatively submit [an issue](https://github.com/IreneKilgannon/DataAnalytics/issues).
