@@ -40,17 +40,3 @@ for value in numbers:
     # use the end paramater to print the values in numbers list on the same line.
     print(f'{value} ', end = '')
 
-
-'''
-References
-
-Short video on the Collatz conjecture: https://www.youtube.com/watch?v=6MfifYEA-r0
-
-Control Flow, A Whirlwind Tour of Python, Jake VanderPlas, pages 37-41  or https://github.com/jakevdp/WhirlwindTourOfPython/blob/master/07-Control-Flow-Statements.ipynb
-
-Looping through items in a list: https://www.w3schools.com/python/gloss_python_loop_list_items.asp
-
-Python end parameter in print(): https://www.geeksforgeeks.org/gfact-50-python-end-parameter-in-print/
-
-Collatz from defining a function and using a while loop: https://medium.com/@chakshugupta774/exploring-the-collatz-conjecture-with-python-7c5d9f31d233
-'''

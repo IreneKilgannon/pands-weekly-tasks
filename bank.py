@@ -24,9 +24,3 @@ cent = (amount1 + amount2) % 100
 print(f'The sum of these is €{euro}.{cent}')
 
 
-'''References:
-Floating point errors: https://docs.python.org/3/tutorial/floatingpoint.html
-FLoor division: (https://www.geeksforgeeks.org/floor-division-in-python/)
-Modulo: https://realpython.com/python-modulo-operator/#modulo-operator-with-float
-
-'''

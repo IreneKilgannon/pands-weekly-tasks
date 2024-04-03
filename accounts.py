@@ -47,9 +47,3 @@ else:
 
 
 # Link to the associated jupyter notebook: https://github.com/IreneKilgannon/pands-weekly-tasks/blob/main/accounts.ipynb
-
-'''References
-
-[Python strings](https://realpython.com/python-strings/). The sections on string indexing, string slicing and modifying strings were particularily useful.
-
-[Python string concatenation](https://www.w3schools.com/python/gloss_python_string_concatenation.asp)'''
