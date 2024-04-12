@@ -184,10 +184,6 @@ __Week 1 helloworld.py__
 
 _Task:_ Write a program that prints Hello World!
 
-_Output_
-
-    Hello World!
-
 _References_
 
 1. [Python-print-function](https://www.datacamp.com/tutorial/python-print-function)
@@ -196,9 +192,6 @@ _References_
 __Week 2 bank.py__
 
 _Task:_ Prompt the user to read in two money amounts in cents, sum the amounts and print the answer in euro and cents in the format €0.00.
-
-_Output_
-
 
 _References_
 
@@ -213,10 +206,6 @@ __Week 3 accounts.py__
 
 _Task:_ Read in a 10 character bank account number and output the account number displaying the last 4 digits showing and the first 6 digits replaced with X's.
 
-_Output_
-
-    Please enter a 10 digit account number: 1234567890
-    XXXXXX7890
 
 Extra: Modify the program to deal with an account number of any length.
 
