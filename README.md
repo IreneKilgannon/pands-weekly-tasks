@@ -53,11 +53,11 @@ _Task:_ Prompt the user to read in two money amounts in cents, sum the amounts a
 
 _Output_
 
-`Enter amount1 (in cent):  65`
+   Enter amount1 (in cent):  65
 
-`Enter amount2 (in cent): 180`
+    Enter amount2 (in cent): 180
 
-`The sum of these is €2.45`
+    The sum of these is €2.45
 
 _References_
 
@@ -206,13 +206,7 @@ __Week 3 accounts.py__
 
 _Task:_ Read in a 10 character bank account number and output the account number displaying the last 4 digits showing and the first 6 digits replaced with X's.
 
-
 Extra: Modify the program to deal with an account number of any length.
-
-_Output_
-
-    Please enter an account number: 123456
-    XX3456
 
 _References_
 
@@ -228,10 +222,6 @@ _References_
 __Week 4  collatz.py__
 
 _Task:_ Based on the Collatz Conjecture. Ask the user to input any positive integer and output the following: if number is even, divide by 2, if number is odd, multiply x 3 and add 1. Have the program end when value is 1. 
-
-_Output_
-
-
 
 _References_
 
