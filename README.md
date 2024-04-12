@@ -234,6 +234,10 @@ _References_
 
 2. Python string concatenation https://www.w3schools.com/python/gloss_python_string_concatenation.asp
 
+3. How to Replace a String in Python https://realpython.com/replace-string-python
+
+4. Python String replace() Method https://www.w3schools.com/python/ref_string_replace.asp
+
 
 __Week 4  collatz.py__
 
