@@ -23,27 +23,22 @@ else:
     print(new_account)
 
 
-# Modify program to deal with a/c of any length. Assume the a/c number is at least 5 digits in length.
+# Modify program to deal with a/c of any length.
+# Assume the a/c number is at least 5 digits in length so that we have at least 1 number along with the 4 X's.
 
 # Input
 any_account_length = str(input("Please enter an account number: "))
 
+# Check the length of any_account_length
 if len(any_account_length) < 5:
     print("At least 5 digits are required.")
 
+# Calculate the length of the account number up to the last four characters. Multiply the length by X. 
+# Concatenate the result with the last four digits.
+# Print the result.
 else:
-    # Slice the string into two parts. The first part of the string up to and not inclulding the last 4 digits.
-    first_part = any_account_length[:-4]
+    print((len(any_account_length[:-4]) * "X") + any_account_length[-4:])
 
-    # Last four digits of the any_account string. 
-    last_four2 = any_account_length[-4:]
-
-    # Get the length of the first part of the account number. Multiply the length by "X".
-    # This will return the correct number of X's for the length of first part of the account.
-    x_account = (len(first_part)) * "X"
-
-# Print the result of the concatenatation x_account with the last four digits
-    print(x_account + last_four2)
 
 
 # Link to the associated jupyter notebook: https://github.com/IreneKilgannon/pands-weekly-tasks/blob/main/accounts.ipynb
