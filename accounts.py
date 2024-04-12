@@ -1,6 +1,7 @@
 # bank.py
 # A program that reads in a 10 character account number.
 # Outputs the account number with only the last 4 digits showing and the first 6 replaced with X's.
+# Extra: modify the program to deal with an account number of any length.
 # Author: Irene Kilgannon
 
 
@@ -16,10 +17,10 @@ else:
     # String.replace(old value, new value) 
     # Old value is the string up to the last four digits.
     # New value is the length of the string multiplied by "X"
-    hidden_account = account.replace(account[:-4], len(account[:-4]) * "X")
+    redact_account = account.replace(account[:-4], len(account[:-4]) * "X")
 
-    # Print the new_account number with the first 6 numbers replaced with X's.
-    print(hidden_account)
+    # Print the new redacted account number with the first 6 numbers replaced with X's.
+    print(redact_account)
 
 
 # Modify program to deal with a/c of any length.
@@ -28,7 +29,7 @@ else:
 # Input
 any_account = str(input("Please enter an account number: "))
 
-# Check the length of any_account_length
+# Check the length of any_account
 if len(any_account) < 5:
     print("At least 5 digits are required.")
 

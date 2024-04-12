@@ -199,9 +199,6 @@ _Task:_ Prompt the user to read in two money amounts in cents, sum the amounts a
 
 _Output_
 
-    Enter amount1 (in cent):  65
-    Enter amount2 (in cent): 180
-    The sum of these is €2.45
 
 _References_
 
