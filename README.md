@@ -53,7 +53,7 @@ _Task:_ Prompt the user to read in two money amounts in cents, sum the amounts a
 
 _Output_
 
-   Enter amount1 (in cent):  65
+    Enter amount1 (in cent):  65
 
     Enter amount2 (in cent): 180
 
@@ -72,7 +72,17 @@ __Week 3 accounts.py__
 
 _Task:_ Read in a 10 character bank account number and output the account number displaying the last 4 digits showing and the first 6 digits replaced with X's.
 
+_Output_
+
+    Please enter a 10 digit account number: 1234567890
+    XXXXXX7890
+
 Extra: Modify the program to deal with an account number of any length.
+
+_Output_
+
+    Please enter an account number: 123456
+    XX3456
 
 _References_
 
