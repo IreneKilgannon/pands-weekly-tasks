@@ -22,5 +22,3 @@ cent = (amount1 + amount2) % 100
 
 # Print the required output in €euro.cent
 print(f'The sum of these is €{euro}.{cent}')
-
-
