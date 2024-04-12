@@ -13,9 +13,9 @@ import matplotlib.pyplot as plt
 np.random.seed(123355)
 
 # Inputs into the normal(mean, standard deviation, values)
-data = np.random.normal(5, 2, 1000)  
+data = np.random.normal(5, 2, 1000)
 
-# Truncate the x-axis at 10  
+# Truncate the x-axis at 10
 plt.xlim(0, 10)
 
 # Generate a histogram.

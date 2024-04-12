@@ -10,7 +10,7 @@ amount1 = int(input('Enter amount1 (in cent): '))
 # Enter the second amount
 amount2 = int(input('Enter amount2 (in cent): '))
 
-# If (amount1 + amount2)/100 were used to calculate €0.00, there could potentially be floating point errors.
+# If (amount1 + amount2)/100 was used to calculate the total amount, this could result in floating point errors.
 
 # A better method would use floor division (//) and modulo (%).
 
