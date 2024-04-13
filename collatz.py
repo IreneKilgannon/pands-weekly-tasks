@@ -2,17 +2,19 @@
 # Outputs the following:
     # if number is even, divide by 2.
     # if number is odd, multiply x 3 and add 1.
-# Have the program end when value is 1.
+    # Have the program end when value is 1.
 # This is called the Collatz Conjecture. 
+
 # Author: Irene Kilgannon
 
+# The Collatz Conjecture states that you will always end up with the number 1 if even numbers divided by two and odd numbers are multiplied by 3 and add 1.
 # Modified script to print an error message if the number entered was not a positive integer.
 
 try:
     # Ask the user to input a positive integer. 
     number = int(input("Please enter a positive integer: "))
 
-    # If number a less than or equal to 0 is entered, print an error message. 
+    # If a number is less than or equal to 0 is entered, print an error message. 
     if number <= 0:
         print(f"Error. You entered {number}, which is not a positive integer.")
 
