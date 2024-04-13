@@ -6,7 +6,7 @@
 # This is called the Collatz Conjecture. 
 # Author: Irene Kilgannon
 
-# Modified script to print and error message if the number entered was not an integer or less than or equal to zero.
+# Modified script to print an error message if the number entered was not a positive integer.
 
 try:
     # Ask the user to input a positive integer. 
@@ -29,12 +29,12 @@ try:
 
             # Check if the number is even.
             elif number % 2 == 0:
-                # Divide the number by two if it is even and greater that 1. Append the result to the numbers list.
+                # Divide the number by two if it is even. Append the result to the numbers list.
                 # Using floor division as I want the answer as an integer.
                 numbers.append(number//2)
 
             else:
-                # For odd numbers append the result of number*3 + 1 to the list.
+                # For odd numbers append the result of number*3 + 1 to the numbers list.
                 numbers.append(number*3 + 1)
 
         # Iterate through the values in the numbers list.
