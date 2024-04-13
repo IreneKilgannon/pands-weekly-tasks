@@ -42,6 +42,8 @@ _Task:_ Write a program that prints Hello World!
 
 _Output_
 
+    Hello World!
+
 _References_
 
 1. [Python-print-function](https://www.datacamp.com/tutorial/python-print-function)
@@ -175,6 +177,10 @@ _Task:_ Write a program that displays (on the one set of axes):
 * a histogram of a normal distribution of 1000 values with a mean of 5 and a standard deviation of 2
 * and a plot of the function h(x) = x^3 in the range of 0 to 10
 
+_Output_
+
+![Plot of Histogram](https://github.com/IreneKilgannon/pands-weekly-tasks/blob/main/plottask.png)
+
 _References_
 
 1. How to Plot Normal Distribution over Histogram in Python https://www.geeksforgeeks.org/how-to-plot-normal-distribution-over-histogram-in-python/
@@ -185,7 +191,9 @@ _References_
 
 4. Setting a limit on the x-axis, matplotlib.pyplot.xlim https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.xlim.html
 
-5. List of named colours in matplotlib https://matplotlib.org/stable/gallery/color/named_colors.html
+5. Range() as an argument into plt.hist() function (https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html)
+
+6. List of named colours in matplotlib https://matplotlib.org/stable/gallery/color/named_colors.html
 
 ## Description of each task with references.
 ***
@@ -323,7 +331,9 @@ _References_
 
 4. Setting a limit on the x-axis, matplotlib.pyplot.xlim https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.xlim.html
 
-5. List of named colours in matplotlib https://matplotlib.org/stable/gallery/color/named_colors.html
+5. Range() as an argument into plt.hist() function (https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html)
+
+6. List of named colours in matplotlib https://matplotlib.org/stable/gallery/color/named_colors.html
 
 
 ## Get help

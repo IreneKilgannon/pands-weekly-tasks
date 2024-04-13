@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 # Set a seed, not required as part of task but it will make it easier to compare changes to the program.
 np.random.seed(2)
 
-# Inputs into the normal(mean, standard deviation, values)
+# Inputs into the normal(loc = mean, scale = standard deviation, size = no. of values)
 data = np.random.normal(loc = 5, scale = 2, size = 1000)
 
 # Generate a histogram.
@@ -20,7 +20,7 @@ plt.hist(data, range = (0, 10), color = 'mediumorchid', edgecolor = 'black')
 
 # Plot the function h(x) = x^3 in the range of 0 to 10
 
-# Generate x points
+# Generate x points. Endpoint is excluded.
 x_points = np.array(range(0, 11))
 
 # Generate the y-points. y = x cubed.
@@ -30,10 +30,10 @@ y_points = x_points**3
 plt.plot(x_points, y_points, color = 'turquoise', marker = 'o')
 
 # Add title and label x and y axis.
-plt.title("Histogram of normal distribution and lineplot of h(x) = x^3")
-plt.xlabel("Value")
+plt.title("Histogram of Normal Distribution and Lineplot of h(x) = x^3")
+plt.xlabel("Values")
 plt.ylabel("Frequency")
-plt.legend(["h(x) = x**3","normal distribution"])
+plt.legend(["h(x) = x^3","Normal Distribution"])
 
 # Save the plot as a png file
 plt.savefig("plottask.png")
