@@ -10,18 +10,16 @@ import matplotlib.pyplot as plt
 
 
 # Set a seed, not required as part of task but it will make it easier to compare changes to the program.
-np.random.seed(123355)
+np.random.seed(2)
 
 # Inputs into the normal(mean, standard deviation, values)
-data = np.random.normal(5, 2, 1000)
-
-# Truncate the x-axis at 10
-plt.xlim(0, 10)
+data = np.random.normal(loc = 5, scale = 2, size = 1000)
 
 # Generate a histogram.
-plt.hist(data, color = 'mediumorchid', edgecolor = 'black')
+plt.hist(data, range = (0, 10), color = 'mediumorchid', edgecolor = 'black')
 
 # Plot the function h(x) = x^3 in the range of 0 to 10
+
 # Generate x points
 x_points = np.array(range(0, 11))
 
