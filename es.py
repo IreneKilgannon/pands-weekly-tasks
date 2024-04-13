@@ -6,7 +6,7 @@
 import os
 import sys
 
-# Check the length of sys.argv to ensure only one argument entered.
+# Check the length of sys.argv to ensure .
 if len(sys.argv) !=2:
     sys.exit((f"Error: One file is required, {len(sys.argv)-1} were given."))
 

@@ -6,37 +6,41 @@
 # This is called the Collatz Conjecture. 
 # Author: Irene Kilgannon
 
+# Modified script to print and error message if the number entered was not an integer or less than or equal to zero.
 
-# Generate an empty list called numbers, to which we will append the numbers generated from the for loop.
-numbers = []
-
-# Ask the user to input a positive integer. 
-number = int(input("Please enter a positive integer: "))
-
-# If number a negative number is entered, print an error message. 
-if number < 0:
-    print('The number must be a positive integer. You entered a negative integer.')
+try:
+    # Ask the user to input a positive integer. 
     number = int(input("Please enter a positive integer: "))
 
-# Append the number to the numbers list.
-numbers.append(number)
+    # If number a less than or equal to 0 is entered, print an error message. 
+    if number <= 0:
+        print(f"Error. You entered {number}, which is not a positive integer.")
 
-# A for loop to carry out the required calculations.
-for number in numbers:
-    # Break out of the loop when the number is 1.
-    if number == 1:
-        break
-
-    # Divide the number by two if it is greater that 1 and even. Append the result to the numbers list.
-    elif number % 2 == 0:
-        numbers.append(number//2)
-
-    # For odd numbers append the result of number*3 + 1 to the list.
     else:
-        numbers.append(number*3 + 1)
+        # Generate an empty list called numbers, to which we will append the numbers generated from the for loop.
+        numbers = []
+        # Append the number to the numbers list.
+        numbers.append(number)
+        # A for loop to carry out the required calculations.
+        for number in numbers:
+            # Break out of the loop when the number is equal to 1.
+            if number == 1:
+                break
 
-# use a for loop to get the values in numbers list.
-for value in numbers:
-    # use the end paramater to print the values in numbers list on the same line.
-    print(f'{value} ', end = '')
+            # Check if the number is even.
+            elif number % 2 == 0:
+                # Divide the number by two if it is even and greater that 1. Append the result to the numbers list.
+                # Using floor division as I want the answer as an integer.
+                numbers.append(number//2)
 
+            else:
+                # For odd numbers append the result of number*3 + 1 to the list.
+                numbers.append(number*3 + 1)
+
+        # Iterate through the values in the numbers list.
+        for value in numbers:
+        # use the end paramater to print the values in numbers list on the same line.
+            print(f'{value} ', end = '')
+
+except ValueError:
+    print(f'Error. Number must be an integer.')
