@@ -24,4 +24,4 @@ else:
     print("It is the weekend, yah!")
 
 
-# See weekday.ipynb (https://github.com/IreneKilgannon/pands-weekly-tasks/blob/main/weekday.ipynb)
+# See weekday.ipynb for additional comments and references (https://github.com/IreneKilgannon/pands-weekly-tasks/blob/main/weekday.ipynb)

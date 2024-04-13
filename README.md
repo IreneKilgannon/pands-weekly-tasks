@@ -56,9 +56,7 @@ _Task:_ Prompt the user to read in two money amounts in cents, sum the amounts a
 _Output_
 
     Enter amount1 (in cent):  65
-
     Enter amount2 (in cent): 180
-
     The sum of these is €2.45
 
 _References_
@@ -113,6 +111,16 @@ _References_
 __Week 5 weekday.py__
 
 _Task:_ Write a program that outputs whether or not today is a weekday. If it is a weekday output is "Yes, unfortunately today is a weekday". If it is the weekend output is "It is the weekend, yah!"
+
+_Output_
+
+At weekend:
+
+    It is the weekend, yah!
+
+On a weekday:
+
+    Yes, unfortunately today is a weekday.
 
 _References_
 
