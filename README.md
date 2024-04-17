@@ -97,14 +97,15 @@ _Task:_ Based on the Collatz Conjecture. Ask the user to input any positive inte
 
 __Output__
 
+If a positive integer is entered the output is:
     Please enter a positive integer: 16
     16 8 4 2 1
 
-    If a negative integer is entered the output is:
+If a negative integer is entered the output is:
     Please enter a positive integer: -16
     Error. You entered -16, which is not a positive integer.
 
-    If a floating point number is entered the output is:
+If a floating point number is entered the output is:
     Please enter a positive integer: 9.56
     Error. Number must be an integer.
 
