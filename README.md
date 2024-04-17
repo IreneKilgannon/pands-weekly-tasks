@@ -162,6 +162,7 @@ _Output_
     The square root of 14.5 is approx. 3.8
 
 If a negative number is entered:
+
     Please enter a positive number: -9
     The number entered must be a posive number. You entered -9.0.
 
