@@ -6,9 +6,10 @@
 import os
 import sys
 
-# Check the length of sys.argv to ensure .
+# Check the length of sys.argv to ensure the correct number of arguments entered.
+# There should be two items entered into the command line, es.py and the filename whose no of e's will be counted.
 if len(sys.argv) !=2:
-    sys.exit((f"Error: One file is required, {len(sys.argv)-1} were given."))
+    sys.exit((f"Error: One txt file is required, {len(sys.argv)-1} were entered."))
 
 # For readability assign a variable name to the file at sys.argv[1].
 file_name = sys.argv[1]
@@ -29,7 +30,7 @@ try:
 
 # Print an exception if the file was not found.
 except FileNotFoundError:
-    print("That file was not found.")
+    print("Error: That file was not found.")
 
 
 
