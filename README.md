@@ -95,6 +95,18 @@ __Week 4  collatz.py__
 
 _Task:_ Based on the Collatz Conjecture. Ask the user to input any positive integer and output the following: if number is even, divide by 2, if number is odd, multiply x 3 and add 1. Have the program end when value is 1. 
 
+__Output__
+    Please enter a positive integer: 16
+    16 8 4 2 1
+
+    If a negative integer is entered the output is:
+    Please enter a positive integer: -16
+    Error. You entered -16, which is not a positive integer.
+
+    If a floating point number is entered the output is:
+    Please enter a positive integer: 9.56
+    Error. Number must be an integer.
+
 _References_
 
 1. Youtube video from ScienceWorld, Collatz Conjecture 101 (explanation, examples simulation) https://www.youtube.com/watch?v=6MfifYEA-r0
