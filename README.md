@@ -95,7 +95,7 @@ __Week 4  collatz.py__
 
 _Task:_ Based on the Collatz Conjecture. Ask the user to input any positive integer and output the following: if number is even, divide by 2, if number is odd, multiply x 3 and add 1. Have the program end when value is 1. 
 
-__Output__
+_Output_
 
 If a positive integer is entered the output is:
 
@@ -155,6 +155,15 @@ _References_
 __Week 6 squareroot.py__
 
 _Task:_ Calculate the square roots using the Newton Method.
+
+_Output_
+
+    Please enter a positive number: 14.5
+    The square root of 14.5 is approx. 3.8
+
+If a negative number is entered:
+    Please enter a positive number: -9
+    The number entered must be a posive number. You entered -9.0.
 
 _References_
 

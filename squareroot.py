@@ -11,7 +11,8 @@
 # The equation for calculating the square root using Newton's equation is 0.5 * (approximation + a/approximation), where a = number whose square root we need to calculate.
 
 # Ask the user to input a number whose square root we want to calculate.
-a = float(input("Please enter a number: "))
+a = float(input("Please enter a positive number: "))
+
 
 # Define a square root function.
 def square_root():
@@ -38,10 +39,12 @@ def square_root():
             break
         
     # The estimate for the square root is the last value in the list.
-    return estimates[-1]
+    return round(estimates[-1], 1)
 
 # Output
-print(f"The square root of {a} is {square_root()}")
-
+if a <= 0:
+    print(f'The number entered must be a posive number. You entered {a}.')
+else:
+    print(f"The square root of {a} is approx. {square_root()}")
 
 # Link to the jupyter notebook: https://github.com/IreneKilgannon/pands-weekly-tasks/blob/main/squareroot.ipynb
