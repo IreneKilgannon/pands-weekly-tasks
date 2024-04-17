@@ -36,7 +36,8 @@ To clone from GitHub enter the following in the command line:
 
     git clone https://github.com/IreneKilgannon/pands-weekly-tasks.git
 
-To update the repository on your machine, in the command line enter:
+To update the repository on your machine, in the the correct directory in the command line enter:
+
     git pull
 
 
