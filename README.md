@@ -96,6 +96,7 @@ __Week 4  collatz.py__
 _Task:_ Based on the Collatz Conjecture. Ask the user to input any positive integer and output the following: if number is even, divide by 2, if number is odd, multiply x 3 and add 1. Have the program end when value is 1. 
 
 __Output__
+
     Please enter a positive integer: 16
     16 8 4 2 1
 
