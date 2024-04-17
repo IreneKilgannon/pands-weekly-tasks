@@ -30,7 +30,14 @@ __Step 1__ Download and install [Anaconda](https://www.anaconda.com/download). A
 
 __Step 2__ Download and install [Visual Studio Code](https://code.visualstudio.com/).
 
-__Step 3__ 
+__Step 3__ Each file was written in VScode and pushed to [my GitHub account](https://github.com/IreneKilgannon/pands-weekly-tasks/tree/main) for assessment.
+
+To clone from GitHub enter the following in the command line:
+
+    git clone https://github.com/IreneKilgannon/pands-weekly-tasks.git
+
+To update the repository on your machine, in the command line enter:
+    git pull
 
 
 ## Description of each task with references.
@@ -164,7 +171,7 @@ _Output_
 If a negative number is entered:
 
     Please enter a positive number: -9
-    The number entered must be a posive number. You entered -9.0.
+    Error: The number entered must be a posive number. You entered -9.0.
 
 _References_
 
@@ -193,12 +200,17 @@ __Output__
     PS C:\Users\Irene\Desktop\pands\pands-weekly-tasks> python es.py moby-dick.txt
     115002
 
+Error message for incorrect number of arguments entered in the command line.
+
     PS C:\Users\Irene\Desktop\pands\pands-weekly-tasks> python es.py moby-dick.jpg moby-dick.txt
     Error: One txt file is required, 2 were entered.
 
+Error message for incorrect file type, file type must be txt.
+
     PS C:\Users\Irene\Desktop\pands\pands-weekly-tasks> python es.py moby-dick.jpg
     Error: File format must be .txt. File format given was .jpg.
-    
+
+Error message for file not found.
     PS C:\Users\Irene\Desktop\pands\pands-weekly-tasks> python .\es.py moby.txt
     Error: That file was not found.
 
