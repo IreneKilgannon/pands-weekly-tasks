@@ -42,9 +42,12 @@ def square_root():
     return round(estimates[-1], 1)
 
 # Output
+# Check that the number entered is a positive number.
 if a <= 0:
-    print(f'The number entered must be a posive number. You entered {a}.')
+    # Print error message if number is not positive. 
+    print(f'Error: The number entered must be a posive number. You entered {a}.')
 else:
+    # Print the square root of the number entered.
     print(f"The square root of {a} is approx. {square_root()}")
 
 # Link to the jupyter notebook: https://github.com/IreneKilgannon/pands-weekly-tasks/blob/main/squareroot.ipynb

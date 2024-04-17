@@ -178,7 +178,9 @@ _References_
 
 5. Learn How to Write Markdown & LaTeX in the Jupyter Notebook https://towardsdatascience.com/write-markdown-latex-in-the-jupyter-notebook-10985edb91fd
 
-6. A much neater, concise method of using Newton's equation to calculate square roots than what I did. Ppython Square Root https://www.kodeclik.com/python-square-root/. Why didn't I think of this?!
+6. Python round() function https://www.w3schools.com/python/ref_func_round.asp
+
+7. A much neater, concise method of using Newton's equation to calculate square roots than what I did. Ppython Square Root https://www.kodeclik.com/python-square-root/. Why didn't I think of this?!
 
 
 __Week 7 es.py__
