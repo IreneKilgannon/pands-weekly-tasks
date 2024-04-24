@@ -67,6 +67,13 @@ _Output_
     Enter amount2 (in cent): 180
     The sum of these is €2.45
 
+Error message if the amount entered is not a whole number.
+
+    Enter amount1 (in cent): 234
+    Enter amount2 (in cent): 34.3
+    Error: The amount entered must be a whole number.
+
+
 _References_
 
 1. Floating Point Arithmetic: Issues and Limitations https://docs.python.org/3/tutorial/floatingpoint.html
@@ -197,7 +204,7 @@ _Task:_ Write a program that reads in a text file and outputs the number of e's 
 
 __Output__
 
-    In the command line:
+In the command line:
     PS C:\Users\Irene\Desktop\pands\pands-weekly-tasks> python es.py moby-dick.txt
     115002
 
@@ -212,7 +219,8 @@ Error message for incorrect file type, file type must be txt.
     Error: File format must be .txt. File format given was .jpg.
 
 Error message for file not found.
-    PS C:\Users\Irene\Desktop\pands\pands-weekly-tasks> python .\es.py moby.txt
+
+    PS C:\Users\Irene\Desktop\pands\pands-weekly-tasks> python es.py moby.txt
     Error: That file was not found.
 
 
@@ -222,7 +230,9 @@ _References_
 
 2. How to download files with URLs from python https://realpython.com/python-download-file-from-url
 
-3. Python string count() method https://www.w3schools.com/python/ref_string_count.asp
+3. Python String count() method https://www.w3schools.com/python/ref_string_count.asp
+
+4. Python String lower() method https://www.w3schools.com/python/ref_string_lower.asp
 
 4. Command line arguments https://cs.stanford.edu/people/nick/py/python-command.html#:~:text=The%20command%20line%20is%20a,called%20%22command%20line%20arguments%22
 
@@ -234,7 +244,7 @@ _References_
 
 8. Python os.path.splitext() method https://www.geeksforgeeks.org/python-os-path-splitext-method/
 
-9. Python try and except https://www.w3schools.com/python/python_try_except.asp 
+9.  Python try and except https://www.w3schools.com/python/python_try_except.asp 
 
 
 __Week 8 plottask.py__

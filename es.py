@@ -7,7 +7,7 @@ import os
 import sys
 
 # Check the length of sys.argv to ensure the correct number of arguments entered.
-# There should be two items entered into the command line, es.py and the filename whose no of e's will be counted.
+# There should be two items entered into the command line, es.py and the name of the txt whose no of e's will be counted.
 if len(sys.argv) !=2:
     sys.exit((f"Error: One txt file is required, {len(sys.argv)-1} were entered."))
 
@@ -24,7 +24,7 @@ if ext != '.txt':
 # Open the file to read it.
 try:
     with open(file_name, 'r') as f:
-        # Count all the e's after converting them to lower case with lower()
+        # Count all the e's after converting them to lower case with lower().
         e_count = f.read().lower().count("e")
         print(e_count)
 

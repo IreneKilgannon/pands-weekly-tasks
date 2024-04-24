@@ -4,8 +4,6 @@
 # Suggested to look at the newton method of estimating square roots.
 # Author: Irene Kilgannon
 
-
-
 # $$x_{n+1} = \frac{1}{2}(x_{n}+ \frac{a}{x_{n}})$$
 
 # The equation for calculating the square root using Newton's equation is 0.5 * (approximation + a/approximation), where a = number whose square root we need to calculate.
