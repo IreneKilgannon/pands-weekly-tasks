@@ -14,7 +14,7 @@ a = float(input("Please enter a positive number: "))
 
 
 # Define a square root function.
-def square_root():
+def sqrt():
     '''This function will calculate approximate square roots using Newton's equation.'''
     # Generate an empty list
     estimates = []
@@ -47,6 +47,6 @@ if a <= 0:
     print(f'Error: The number entered must be a posive number. You entered {a}.')
 else:
     # Print the square root of the number entered.
-    print(f"The square root of {a} is approx. {square_root()}")
+    print(f"The square root of {a} is approx. {sqrt()}")
 
 # Link to the jupyter notebook: https://github.com/IreneKilgannon/pands-weekly-tasks/blob/main/squareroot.ipynb
