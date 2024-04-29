@@ -1,5 +1,5 @@
 # Asks the user to input any positive integer.
-# Outputs the following:
+# Outputs the successive values of the following calculation:
     # if number is even, divide by 2.
     # if number is odd, multiply x 3 and add 1.
     # Have the program end when value is 1.
@@ -14,9 +14,9 @@ try:
     # Ask the user to input a positive integer. 
     number = int(input("Please enter a positive integer: "))
 
-    # If a number is less than or equal to 0 is entered, print an error message. 
+    # If the number entered is less than or equal to 0, print an error message. 
     if number <= 0:
-        print(f"Error. You entered {number}, which is not a positive integer.")
+        print(f"Error. A positive integer is required. You entered {number}.")
 
     else:
         # Generate an empty list called numbers, to which we will append the numbers generated from the for loop.
@@ -41,7 +41,7 @@ try:
 
         # Iterate through the values in the numbers list.
         for value in numbers:
-        # use the end paramater to print the values in numbers list on the same line.
+        # use the end parameter to print the values in numbers list on the same line.
             print(f'{value} ', end = '')
 
 except ValueError:

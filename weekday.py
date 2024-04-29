@@ -1,4 +1,4 @@
-# Write a program that outputs whether or not today is a weekday
+# Write a program that outputs whether or not today is a weekday.
 # If it is a weekday output is "Yes, unfortunately today is a weekday".
 # If weekend output "It is the weekend, yah!"
 # Author: Irene Kilgannon

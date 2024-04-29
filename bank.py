@@ -1,7 +1,7 @@
 # bank.py
-# Prompt the user and read in two money amounts in cents
-# Add the two amounts
-# Print the answer in euro and cents €0.00
+# Prompt the user and read in two money amounts in cents.
+# Add the two amounts.
+# Print the answer in euro and cents €0.00.
 # Author: Irene Kilgannon
 
 # Error handling to ensure amount entered is a whole number.

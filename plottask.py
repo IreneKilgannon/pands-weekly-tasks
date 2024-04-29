@@ -1,7 +1,6 @@
 # Write a program that displays a histogram of a normal distribution of 1000 values with a mean of 5 and a standard deviation of 2
 # and a plot of the function h(x) = x^3 in the range of 0 to 10
-# on the one set of axe
-# truncate at 10 (if needed)
+# on the one set of axes
 # Save copy of plot on Github
 # Author Irene Kilgannon
 
@@ -9,7 +8,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-# Set a seed, not required as part of task but it will make it easier to compare changes to the program.
+# Set a seed, not required as part of task but it will make it easier to track any changes to the program.
 np.random.seed(2)
 
 # Inputs into the normal(loc = mean, scale = standard deviation, size = no. of values)

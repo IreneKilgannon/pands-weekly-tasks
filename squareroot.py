@@ -9,6 +9,7 @@
 # The equation for calculating the square root using Newton's equation is 0.5 * (approximation + a/approximation), where a = number whose square root we need to calculate.
 
 # Ask the user to input a number whose square root we want to calculate.
+# Variable is saved as a floating point number.
 a = float(input("Please enter a positive number: "))
 
 

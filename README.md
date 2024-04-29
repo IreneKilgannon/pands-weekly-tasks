@@ -114,13 +114,13 @@ _Output_
 
 If a positive integer is entered the output is:
 
-    Please enter a positive integer: 16
-    16 8 4 2 1
+    Please enter a positive integer: 10
+    10 5 16 8 4 2 1
 
 If a negative integer is entered the output is:
 
     Please enter a positive integer: -16
-    Error. You entered -16, which is not a positive integer.
+    Error. A positive integer is required. You entered -16.
 
 If a floating point number is entered the output is:
 
